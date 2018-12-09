@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./src/lib/revealjs/css/reveal.css">
+        <link rel="stylesheet" href="./src/lib/revealjs/css/theme/black.css">
+    </head>
+    <body>
+        <div class="reveal">
+                <div class="slides">
+                    <!--section: Intoduction-->
+                    <section data-markdown>
+                        <textarea data-template>
+                            ## Serverless with Google Cloud Functions
+                            ###### By [Sergio Pacheco](https://twitter.com/sergiop1994)
+                        </textarea>
+                    </section>
+                    <!--End Section-->
+
+                    <!--Section: Serverless-->
+                    <section data-markdown>
+                            <textarea data-template>
+                                ### What is serverles?
+                            </textarea>
+                    </section>
+                    <section data-markdown>
+                            <textarea data-template>
+                                - System based on event-driven design
+                                - Invisible Infraestructure
+                                - Auto-scalable
+                                - Billed per execution time
+                            </textarea>
+                    </section>
+                    <section data-markdown>
+                            <textarea data-template>
+                                ### Why is serverles?
+                            </textarea>
+                    </section>
+                    
+                    <section data-markdown>
+                            <textarea data-template>
+                                ###### Serverless architecture
+                                DIAGRAMA
+                            </textarea>
+                    </section>
+                    <section data-markdown>
+                            <textarea data-template>
+                                In a more classic architecture, you have to handle:
+                                - Implementation of your logic
+                                - Crashes and uptimes
+                                - Operating Systems
+                                - Networking
+                                - Webserver
+                                - Frameworks and libraries of your app
+                                - Scaling up and down
+                                - Correct versioning of everything
+                            </textarea>
+                    </section>
+                    
+                    <section data-markdown>
+                            <textarea data-template>
+                                ###### Serverless architecture
+                                DIAGRAMA
+                            </textarea>
+                    </section>
+                    <section data-markdown>
+                            <textarea data-template>
+                                In a serverless architecture, you only have to implementation of your logic
+                            </textarea>
+                    </section>
+                    <!--End Section-->
+
+                    <!--Section: Google Cloud Functions-->
+                    <section data-markdown>
+                            <textarea data-template>
+                                ### What is Google Cloud Functions?
+                            </textarea>
+                    </section>
+                    <section data-markdown>
+                            <textarea data-template>
+                                - Serverless execution environment for building connecting cloud Services
+                                - Attach to events single purpose Functions
+                                - Run functions when events are trigger
+                                - Support functions writted on Node 6, Node 8 and Python 3.
+                            </textarea>
+                    </section>
+                    <section data-markdown>
+                            <textarea data-template>
+                                ### Events
+                            </textarea>
+                    </section>
+                    <section data-markdown>
+                            <textarea data-template>
+                                - HTTP
+                                - CloudStorage
+                                - Cloud Pub/Sub
+                                - Firebase
+                                - Cloud Schedulers (Alpha version)
+                            </textarea>
+                    </section>
+
+                    <!-- End Section-->
+
+                    <!--Section: Functions-->
+                    <section data-markdown>
+                            <textarea data-template>
+                                ### HTTP Functions
+                            </textarea>
+                    </section>
+                    <section>
+                        <p>Functions directly invoked via HTTP(s)</p>
+                        <img src="./src/img/HttpExampl1.PNG" />
+
+                    </section>
+                    <section data-markdown>
+                            <textarea data-template>
+                                ### Demo
+                            </textarea>
+                    </section>
+
+
+                    <section data-markdown>
+                            <textarea data-template>
+                                ### Cloud Pub/Sub Functions
+                            </textarea>
+                    </section>
+                    <section>
+                        <p>Function is invoked when a message is published in Cloud Pub/Sub</p>
+                        <img src="./src/img/PubSubExample.PNG" />
+                    </section>
+                    <section data-markdown>
+                            <textarea data-template>
+                                ### Demo
+                            </textarea>
+                    </section>
+
+
+                    <section data-markdown>
+                            <textarea data-template>
+                                ### Cloud Storage Functions
+                            </textarea>
+                    </section>
+                    <section>
+                        <p>
+                            When an object is created in a cloud storage bucket, the function is invoked.
+                        </p>
+                        <img src="./src/img/CloudStorageExample.PNG" />
+                    </section>
+                    <!--End section-->
+
+
+                    <!--Section: Use case-->
+                    <section data-markdown>
+                            <textarea data-template>
+                                ### Use Case
+                            </textarea>
+                    </section>
+
+                    <section data-markdown>
+                            <textarea data-template>
+                                - ETL
+                                - Webhooks
+                                - Lightweight APIs
+                                - Mobile backend
+                                - IoT
+                            </textarea>
+                    </section>
+                    <!--End Section-->
+
+                    <!-- Empty template-->
+                    <section data-markdown>
+                            <textarea data-template>
+                                ## Thanks!
+                                ###### By [@sergiop1994](https://twitter.com/sergiop1994)
+                            </textarea>
+                    </section>
+                </div>
+            </div>
+            <script src="./src/lib/revealjs/reveal.js"></script> 
+            <script src="./src/lib/revealjs/plugins/markdown/marked.js"></script>
+            <script src="./src/lib/revealjs/plugins/markdown/markdown.js"></script>
+            <script>
+                Reveal.initialize();
+            </script> 
+    </body>
+
+</html>
