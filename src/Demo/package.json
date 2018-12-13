@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "comments.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergio Pacheco Jimenez",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/datastore": "^2.0.0",
+    "@google-cloud/translate": "^2.1.3"
+  }
+}
